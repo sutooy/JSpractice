@@ -58,13 +58,12 @@ function humanDecision(input) {
       if (input !== 'rock' || input !== 'scissor' || input !== 'papper' ) {
         return "is not part of the game!";
       }
-    else {'is not part of the game!'}
 };
 
 // testCase
 
 // humanDecision ('rock')
-console.log (humanDecision ('nuclear'));
+console.log (humanDecision (2));
 console.log (humanDecision ('kaki'));
 console.log (humanDecision ('rock'));
 console.log (humanDecision ('pepper'))
