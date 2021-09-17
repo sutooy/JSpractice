@@ -16,8 +16,6 @@ var pecahan = [
     50
     ]
 
-
-
 console.log(calculateChange(700649, 800000));
 console.log(calculateChange(575650, 580000));
 console.log(calculateChange(657650, 600000));

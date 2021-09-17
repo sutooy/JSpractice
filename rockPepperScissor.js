@@ -6,7 +6,7 @@
 // * input -> please input rock, paper, or scissors only
 
 
-var number = Math.floor(Math.random() * 2)
+var number = Math.floor(Math.random() * 3)
 function computerDecision (number) {
     if (number === 0) {
       return "rock";
@@ -18,13 +18,14 @@ function computerDecision (number) {
       return "papper";
   }
 };
-computerDecision(number)
+// computerDecision(number)
 console.log (computerDecision(number))
 
 // console.log (computerDecision(1))
 
 function humanDecision(input) {
-    if (input + computerDecision(number) === 'rockpepper') {
+ 
+    if (input + computerDecision(number) === 'rockpapper') {
       return "lose";
     }
     if (input + computerDecision(number) === 'rockrock') {
@@ -33,7 +34,7 @@ function humanDecision(input) {
     if (input + computerDecision(number) === 'rockscissor') {
         return "win";
     }
-    if (input + computerDecision(number) === 'pepperpepper') {
+    if (input + computerDecision(number) === 'pepperpapper') {
         return "draw";
     }
     if (input + computerDecision(number) === 'pepperrock') {
@@ -42,7 +43,7 @@ function humanDecision(input) {
     if (input + computerDecision(number) === 'pepperscissor') {
           return "lose";
     }
-    if (input + computerDecision(number) === 'scissorpepper') {
+    if (input + computerDecision(number) === 'scissorpapper') {
         return "win";
     }
     if (input + computerDecision(number) === 'scissorrock') {
@@ -54,10 +55,17 @@ function humanDecision(input) {
     if (input + computerDecision(number) === 'undefined') {
         return 'is not part of the game!';
       }
+      if (input !== 'rock' || input !== 'scissor' || input !== 'papper' ) {
+        return "is not part of the game!";
+      }
     else {'is not part of the game!'}
 };
 
 // testCase
 
 // humanDecision ('rock')
-console.log (humanDecision ('nuclear'))
+console.log (humanDecision ('nuclear'));
+console.log (humanDecision ('kaki'));
+console.log (humanDecision ('rock'));
+console.log (humanDecision ('pepper'))
+console.log (humanDecision ('scissor'))
